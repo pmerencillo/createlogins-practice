@@ -1,0 +1,20 @@
+<div class="wrapper">
+  <div class="container">
+    <h2>Welcome</h2>
+
+    <form class="form" [formGroup]="userLoginForm" (ngSubmit)="onSubmit()">
+      <input type="text" formControlName="username" placeholder="Username" />
+      <input type="password" formControlName="password" placeholder="Password" />
+
+      <button class="btn btn-primary" type="submit" id="login-button"><b>Login</b></button>
+      {{ lookupMessage }}
+    </form>
+    <form>
+      or
+      <button class="btn btn-primary" type="submit" (click)="gotoRegistration()" id="register-button"><b>Register</b></button>
+    </form>
+    <!-- <h2>For testing only:</h2> -->
+
+    <!-- {{ users | json }} -->
+  </div>
+</div>
