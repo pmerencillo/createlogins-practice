@@ -6,12 +6,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CreateformComponent } from './createform/createform.component';
 import { LookupformComponent } from './lookupform/lookupform.component';
+import { SitecontentsComponent } from './sitecontents/sitecontents.component';
+import { SitebackupsComponent } from './sitebackups/sitebackups.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CreateformComponent,
-    LookupformComponent
+    LookupformComponent,
+    SitecontentsComponent,
+    SitebackupsComponent
   ],
   imports: [
     BrowserModule,
